@@ -12,7 +12,7 @@ Just Some Dotfiles
 ## Installing
 
 This dotfiles repo is set up to be compatible with the
-[Homesick](git@github.com:technicalpickles/homesick.git) gem.
+[Homesick](https://github.com/technicalpickles/homesick) gem.
 It takes care of all of the symlinking as well as making sure
 the Repo and all of it's dependencies (Git submodules) are
 up to date.
