@@ -1,0 +1,3 @@
+[submodule "home/.etc/vendor/powerline-bash"]
+	path = home/.etc/vendor/powerline-bash
+	url = git@github.com:milkbikis/powerline-bash.git

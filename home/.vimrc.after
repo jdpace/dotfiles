@@ -1,0 +1,24 @@
+" Move between windows with <C-hjkl>
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+
+" Put the cursor in the main window (rather than the NERDTree window)
+" Credit: https://groups.google.com/group/vim_use/msg/404d6560aae55156
+autocmd VimEnter * wincmd p
+
+" Show hidden characters
+set list
+set listchars=tab:▸\ ,trail:·
+
+" \W - remove trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+
+nnoremap - :Switch<CR>
+
+set t_Co=256
+color molokai
+
+"Rvm use system

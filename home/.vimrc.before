@@ -1,0 +1,39 @@
+" css-color seems to kill file open speed
+call janus#disable_plugin('css-color')
+call janus#disable_plugin('snipmate')
+call janus#disable_plugin('snipmate-snippets')
+
+"call janus#disable_plugin('buffergato')
+"call janus#disable_plugin('command-t')
+"call janus#disable_plugin('easymotion')
+"call janus#disable_plugin('endwise')
+"call janus#disable_plugin('fugitive')
+"call janus#disable_plugin('gist')
+"call janus#disable_plugin('gundo')
+"call janus#disable_plugin('hammer')
+"call janus#disable_plugin('indent-object')
+"call janus#disable_plugin('kwbd')
+"call janus#disable_plugin('matchit')
+"call janus#disable_plugin('narrowregion')
+"call janus#disable_plugin('pep8')
+"call janus#disable_plugin('rename2')
+"call janus#disable_plugin('syntastic')
+"call janus#disable_plugin('tagbar')
+"call janus#disable_plugin('tlib')
+"call janus#disable_plugin('unimpaired')
+"call janus#disable_plugin('vimwiki')
+"call janus#disable_plugin('zoomwin')
+
+" Use , as the leader key
+let mapleader=","
+
+" jj to escape insert mode
+imap jj <Esc>
+
+set laststatus=2
+set encoding=utf-8
+
+
+" Vim Powerline
+let g:Powerline_symbols = 'fancy'
+
