@@ -1,3 +1,9 @@
 [submodule "home/.etc/vendor/powerline-bash"]
 	path = home/.etc/vendor/powerline-bash
 	url = git@github.com:milkbikis/powerline-bash.git
+[submodule "home/.janus/switch.vim"]
+	path = home/.janus/switch.vim
+	url = git@github.com:AndrewRadev/switch.vim.git
+[submodule "home/.janus/powerline.vim"]
+	path = home/.janus/powerline.vim
+	url = git@github.com:Lokaltog/vim-powerline.git
