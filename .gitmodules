@@ -10,3 +10,6 @@
 [submodule "home/.etc/vendor/tmux-powerline"]
 	path = home/.etc/vendor/tmux-powerline
 	url = git@github.com:erikw/tmux-powerline.git
+[submodule "home/.etc/vendor/tmux-colors-solarized"]
+	path = home/.etc/vendor/tmux-colors-solarized
+	url = git@github.com:seebi/tmux-colors-solarized.git
