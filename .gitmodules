@@ -13,3 +13,6 @@
 [submodule "home/.etc/vendor/tmux-colors-solarized"]
 	path = home/.etc/vendor/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
+[submodule "home/.etc/vendor/janus"]
+	path = home/.etc/vendor/janus
+	url = https://github.com/carlhuda/janus.git
