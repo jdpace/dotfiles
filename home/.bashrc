@@ -1,6 +1,7 @@
 export PATH=~/.etc/bin:$PATH
 export CDPATH=.:~/Dev/projects:~/Dev/relevance
 
+source ~/.etc/bash/boxen.sh
 source ~/.etc/bash/aliases.sh
 source ~/.etc/bash/autocomplete.sh
 source ~/.etc/bash/functions.sh
