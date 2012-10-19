@@ -13,3 +13,6 @@
 [submodule "home/.janus/taskpaper.vim"]
 	path = home/.janus/taskpaper.vim
 	url = git@github.com:davidoc/taskpaper.vim.git
+[submodule "home/.etc/vendor/janus"]
+	path = home/.etc/vendor/janus
+	url = git://github.com/carlhuda/janus.git
