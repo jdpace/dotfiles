@@ -10,9 +10,9 @@
 [submodule "home/.etc/vendor/tmux-colors-solarized"]
 	path = home/.etc/vendor/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
-[submodule "home/.etc/vendor/janus"]
-	path = home/.etc/vendor/janus
-	url = https://github.com/carlhuda/janus.git
 [submodule "home/.janus/taskpaper.vim"]
 	path = home/.janus/taskpaper.vim
 	url = git@github.com:davidoc/taskpaper.vim.git
+[submodule "home/.etc/vendor/janus"]
+	path = home/.etc/vendor/janus
+	url = git://github.com/carlhuda/janus.git
