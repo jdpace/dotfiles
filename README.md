@@ -20,3 +20,5 @@ up to date.
     gem install homesick
     homesick clone jdpace/dotfiles
     homesick symlink jdpace/dotfiles
+    git clone git://github.com/carlhuda/janus.git $HOME/.vim
+    cd $HOME/.vim && rake
