@@ -1,5 +1,5 @@
 export PATH=~/.etc/bin:$PATH
-export CDPATH=.:~/Dev/projects:~/Dev/relevance
+export CDPATH=.:~/Dev/projects:~/Dev/github
 
 source ~/.etc/bash/boxen.sh
 source ~/.etc/bash/aliases.sh
