@@ -19,6 +19,9 @@ if has("autocmd")
   " Taskpaper has to use hard tabs, I don't want to look at them though
   autocmd FileType taskpaper setlocal nolist
 
+  " Eco wants to use hard tabs :(
+  autocmd FileType eco setlocal sw=2 sts=2 et
+
   " Put the cursor in the main window (rather than the NERDTree window)
   " Credit: https://groups.google.com/group/vim_use/msg/404d6560aae55156
   autocmd VimEnter * wincmd p
