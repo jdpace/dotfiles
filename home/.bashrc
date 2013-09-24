@@ -7,6 +7,7 @@ source ~/.etc/bash/autocomplete.sh
 source ~/.etc/bash/functions.sh
 source ~/.etc/bash/git.sh
 source ~/.etc/bash/git-autocomplete.sh
+source ~/.etc/bash/heroku.sh
 source ~/.etc/bash/homebrew.sh
 source ~/.etc/bash/ruby.sh
 source ~/.etc/bash/ssh-autocomplete.sh
