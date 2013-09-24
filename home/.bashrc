@@ -15,4 +15,5 @@ source ~/.etc/bash/powerline.sh
 source ~/.etc/bash/truecrypt.sh
 source ~/.etc/bash/vim.sh
 
-ssh-add ~/.ssh/id_rsa ~/.ssh/relevance_aws.pem &> /dev/null
+cat ~/.octocat
+(curl https://api.github.com/octocat > ~/.octocat &) 2> /dev/null
