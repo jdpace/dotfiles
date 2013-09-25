@@ -34,11 +34,17 @@ module Dotfiles
 end
 
 desc "Installs dotfiles and dependencies"
-task :install => ['symlink', 'janus:install']
+task :install => ['symlink', 'update', 'janus:install']
 
 desc 'Link files and directories in dotfiles/home to $HOME/'
 task :symlink do
   Dotfiles.symlink
+end
+
+desc 'Update any submodules'
+task :update do
+  root = File.expand_path('..', __FILE__)
+  system "cd #{root} && git submodule update"
 end
 
 namespace :janus do
