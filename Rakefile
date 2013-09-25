@@ -11,7 +11,7 @@ module Dotfiles
 
   def self.symlink_child(child)
     target = "#{ENV['HOME']}/#{child.basename}"
-    puts "ln -s #{child.to_path} #{target}"
+    puts "ln -s #{child} #{target}"
 
     if File.exist?(target)
       puts "!! Skipping, file or directory exists"
@@ -29,7 +29,7 @@ module Dotfiles
   def self.each_child(&block)
     dotfiles = Pathname.glob(dothome.join('.*'))
     dotfiles.reject! { |dotfile| dotfile.basename.to_s.match(/^\.+$/)}
-    dotfiles.each &block
+    dotfiles.each(&block)
   end
 end
 
@@ -44,8 +44,11 @@ end
 namespace :janus do
   desc "Clones Janus into $HOME/.vim"
   task :install do
-    rm_rf "#{ENV['HOME']}/.vim"
-    system "git clone git://github.com/carlhuda/janus.git $HOME/.vim"
+    unless File.exist? "#{ENV['HOME']}/.vim/janus"
+      rm_rf "#{ENV['HOME']}/.vim"
+      system "git clone git://github.com/carlhuda/janus.git $HOME/.vim"
+    end
+
     Rake::Task["janus:update"].invoke
   end
 
