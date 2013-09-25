@@ -13,3 +13,6 @@
 [submodule "home/.janus/taskpaper.vim"]
 	path = home/.janus/taskpaper.vim
 	url = git@github.com:davidoc/taskpaper.vim.git
+[submodule "home/.etc/vendor/powerline-shell"]
+	path = home/.etc/vendor/powerline-shell
+	url = https://github.com/milkbikis/powerline-shell
