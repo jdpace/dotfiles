@@ -1,8 +1,8 @@
-# https://github.com/milkbikis/powerline-bash
-if [ -f ~/.etc/vendor/powerline-bash/powerline-bash.py ]; then
+# https://github.com/milkbikis/powerline-shell
+if [ -f ~/.etc/bash/powerline-shell.py ]; then
   function _update_ps1()
   {
-     export PS1="$(~/.etc/vendor/powerline-bash/powerline-bash.py $?)"
+     export PS1="$(~/.etc/bash/powerline-shell.py)"
   }
 
   export PROMPT_COMMAND="_update_ps1"
