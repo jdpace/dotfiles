@@ -15,3 +15,9 @@ source "${powerline}/config.sh"
 source "${powerline}/lib.sh"
 
 segments_path="${powerline}/${segments_dir}"
+
+# Use Glyphs from https://powerline.readthedocs.org/en/latest/fontpatching.html#glyph-table
+separator_left_bold=""
+separator_left_thin=""
+separator_right_bold=""
+separator_right_thin=""
