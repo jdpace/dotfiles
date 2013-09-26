@@ -13,7 +13,10 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 
 set t_Co=256
-color molokai
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 if has("autocmd")
   " Taskpaper has to use hard tabs, I don't want to look at them though
