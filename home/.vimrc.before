@@ -33,7 +33,6 @@ imap jj <Esc>
 set laststatus=2
 set encoding=utf-8
 
-
-" Vim Powerline
-let g:Powerline_symbols = 'fancy'
+" vim-airline
+let g:airline_powerline_fonts = 1
 

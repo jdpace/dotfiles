@@ -19,3 +19,6 @@
 [submodule "home/.etc/vendor/solarized"]
 	path = home/.etc/vendor/solarized
 	url = https://github.com/altercation/solarized.git
+[submodule "home/.janus/vim-airline"]
+	path = home/.janus/vim-airline
+	url = https://github.com/bling/vim-airline
