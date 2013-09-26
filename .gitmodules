@@ -16,3 +16,6 @@
 [submodule "home/.etc/vendor/powerline-shell"]
 	path = home/.etc/vendor/powerline-shell
 	url = https://github.com/milkbikis/powerline-shell
+[submodule "home/.etc/vendor/solarized"]
+	path = home/.etc/vendor/solarized
+	url = https://github.com/altercation/solarized.git
