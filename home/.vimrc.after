@@ -18,6 +18,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Clear bg color used by git-gutter
+highlight clear SignColumn
+
 if has("autocmd")
   " Taskpaper has to use hard tabs, I don't want to look at them though
   autocmd FileType taskpaper setlocal nolist

@@ -22,3 +22,6 @@
 [submodule "home/.janus/vim-airline"]
 	path = home/.janus/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "home/.janus/vim-gitgutter"]
+	path = home/.janus/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
