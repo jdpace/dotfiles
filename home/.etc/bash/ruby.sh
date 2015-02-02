@@ -9,8 +9,8 @@ complete -F _rbenv rb
 alias td="tail -f log/development.log"
 alias be="bundle exec"
 alias bi="bundle install"
-alias rc="./script/rails console"
-alias rs="./script/rails server"
-alias rg="./script/rails generate"
+alias rc="rails console"
+alias rs="rails server"
+alias rg="rails generate"
 alias rdm='rake db:migrate'
 alias rdtp='rake db:test:prepare'
