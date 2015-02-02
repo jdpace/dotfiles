@@ -10,18 +10,9 @@
 [submodule "home/.etc/vendor/tmux-colors-solarized"]
 	path = home/.etc/vendor/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
-[submodule "home/.janus/taskpaper.vim"]
-	path = home/.janus/taskpaper.vim
-	url = git@github.com:davidoc/taskpaper.vim.git
 [submodule "home/.etc/vendor/powerline-shell"]
 	path = home/.etc/vendor/powerline-shell
 	url = https://github.com/milkbikis/powerline-shell
 [submodule "home/.etc/vendor/solarized"]
 	path = home/.etc/vendor/solarized
 	url = https://github.com/altercation/solarized.git
-[submodule "home/.janus/vim-airline"]
-	path = home/.janus/vim-airline
-	url = https://github.com/bling/vim-airline
-[submodule "home/.janus/vim-gitgutter"]
-	path = home/.janus/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git

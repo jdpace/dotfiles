@@ -34,7 +34,7 @@ module Dotfiles
 end
 
 desc "Installs dotfiles and dependencies"
-task :install => ['symlink', 'update', 'janus:install']
+task :install => ['symlink', 'update']
 
 desc 'Link files and directories in dotfiles/home to $HOME/'
 task :symlink do
@@ -45,21 +45,4 @@ desc 'Update any submodules'
 task :update do
   root = File.expand_path('..', __FILE__)
   system "cd #{root} && git submodule update"
-end
-
-namespace :janus do
-  desc "Clones Janus into $HOME/.vim"
-  task :install do
-    unless File.exist? "#{ENV['HOME']}/.vim/janus"
-      rm_rf "#{ENV['HOME']}/.vim"
-      system "git clone git://github.com/carlhuda/janus.git $HOME/.vim"
-    end
-
-    Rake::Task["janus:update"].invoke
-  end
-
-  desc "Update Janus"
-  task :update do
-    system "cd $HOME/.vim && rake"
-  end
 end
