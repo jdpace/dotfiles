@@ -1,0 +1,16 @@
+" Show hidden characters
+set list
+set listchars=tab:▸\ ,trail:·
+
+" <leader>W - remove trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+
+" Solarized
+set background=dark
+colorscheme solarized
+
+" Toggle light/dark colorscheme
+nnoremap <leader>1 :set background=dark<CR>
+nnoremap <leader>2 :set background=light<CR>
+
