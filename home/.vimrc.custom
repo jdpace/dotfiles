@@ -11,7 +11,3 @@ set background=dark
 colorscheme solarized
 source ~/.vim/plugged/vim-colors-solarized/autoload/togglebg.vim
 
-" Toggle light/dark colorscheme
-nnoremap <leader>1 :set background=dark<CR>
-nnoremap <leader>2 :set background=light<CR>
-
