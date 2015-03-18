@@ -1,7 +1,7 @@
 require 'pathname'
 
 module Dotfiles
-  include Rake::DSL
+  extend Rake::DSL
 
   def self.symlink
     each_child do |child|
@@ -11,11 +11,8 @@ module Dotfiles
 
   def self.symlink_child(child)
     target = "#{ENV['HOME']}/#{child.basename}"
-    puts "ln -s #{child} #{target}"
 
-    if File.exist?(target)
-      puts "!! Skipping, file or directory exists"
-    else
+    unless File.exist?(target)
       ln_s child, target
     end
   end
