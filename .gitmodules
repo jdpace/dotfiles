@@ -1,9 +1,6 @@
 [submodule "home/.etc/vendor/powerline-bash"]
 	path = home/.etc/vendor/powerline-bash
 	url = git@github.com:milkbikis/powerline-bash.git
-[submodule "home/.janus/powerline.vim"]
-	path = home/.janus/powerline.vim
-	url = git@github.com:Lokaltog/vim-powerline.git
 [submodule "home/.etc/vendor/tmux-powerline"]
 	path = home/.etc/vendor/tmux-powerline
 	url = git@github.com:erikw/tmux-powerline.git
