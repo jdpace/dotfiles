@@ -1,2 +1,6 @@
 alias l='ls -liah'
-alias pair="ruby ~/Dev/relevance_etc/scripts/pair"
+
+# prevent CDPATH from echoing
+function cd () {
+  builtin cd "$@" > /dev/null
+}

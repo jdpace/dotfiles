@@ -1,7 +1,7 @@
 if [ -d /usr/local/Cellar/macvim ]; then
-  local macvim_brew_versions=(`ls /usr/local/Cellar/macvim`)
+  macvim_brew_versions=(`ls /usr/local/Cellar/macvim`)
   for latest_macvim_brew_version in "${macvim_brew_versions[@]}"; do :; done
-  if $latest_macvim_brew_version; then
+  if [ ! -z "$latest_macvim_brew_version" ]; then
     export VIM_APP_DIR="/usr/local/Cellar/macvim/$latest_macvim_brew_version"
   fi
 elif [ -d "/Applications/MacVim.app" ]; then

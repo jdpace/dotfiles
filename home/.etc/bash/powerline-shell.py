@@ -176,7 +176,7 @@ class Color(DefaultColor):
 
     HOME_SPECIAL_DISPLAY = False
     PATH_FG = 7
-    PATH_BG = 10
+    PATH_BG = 1
     CWD_FG = 15
     SEPARATOR_FG = 14
 
@@ -184,15 +184,15 @@ class Color(DefaultColor):
     READONLY_FG = 7
 
     REPO_CLEAN_FG = 14
-    REPO_CLEAN_BG = 0
+    REPO_CLEAN_BG = 236
     REPO_DIRTY_FG = 3
-    REPO_DIRTY_BG = 0
+    REPO_DIRTY_BG = 236
 
     JOBS_FG = 4
     JOBS_BG = 8
 
     CMD_PASSED_FG = 15
-    CMD_PASSED_BG = 2
+    CMD_PASSED_BG = 236
     CMD_FAILED_FG = 15
     CMD_FAILED_BG = 1
 
