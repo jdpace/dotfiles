@@ -1,7 +1,8 @@
 export PATH=~/.etc/bin:$PATH
-export CDPATH=.:~/Dev/projects:~/Dev/github
+# CDPATH may cause issues with some github/github scripts
+#  e.g. root=$(cd '..' && pwd)
+# export CDPATH=.:~/Dev/projects:~/Dev/github
 
-source ~/.etc/bash/boxen.sh
 source ~/.etc/bash/aliases.sh
 source ~/.etc/bash/autocomplete.sh
 source ~/.etc/bash/functions.sh
