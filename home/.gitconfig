@@ -1,0 +1,47 @@
+[color]
+remote = green
+ui = true
+untracked = cyan
+current = yellow reverse
+diff = auto
+local = yellow
+branch = auto
+meta = yellow bold
+changed = green
+new = green bold
+added = yellow
+frag = magenta bold
+status = auto
+old = red bold
+
+[hub]
+protocol = https
+
+[core]
+autocrlf = input
+excludesfile = ~/.gitignore
+
+[user]
+name = Jared Pace
+email = jared@codeword.io
+
+[alias]
+dc = diff --cached
+co = checkout
+staged = diff --cached
+cp = cherry-pick
+ci = commit
+di = diff
+st = status
+
+[github]
+	user = jdpace
+
+[branch]
+autosetuprebase = remote
+
+[push]
+default = tracking
+
+[credential]
+helper = osxkeychain
