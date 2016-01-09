@@ -18,5 +18,5 @@ source ~/.etc/bash/vim.sh
 
 export PATH=./bin:$PATH
 
-cat ~/.octocat
-(curl https://api.github.com/octocat > ~/.octocat &) 2> /dev/null
+# cat ~/.octocat
+# (curl https://api.github.com/octocat > ~/.octocat &) 2> /dev/null
