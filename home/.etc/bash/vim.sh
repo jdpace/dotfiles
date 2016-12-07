@@ -16,7 +16,6 @@ else
   export EDITOR="vim -vf"
 fi
 
-
 function janus_install {
   if [ -d $HOME/.vim ]; then
     cd $HOME/.vim && rake

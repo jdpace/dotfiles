@@ -1,3 +1,6 @@
+" Plugins
+Plug 'tomasr/molokai'
+
 " Show hidden characters
 set list
 set listchars=tab:▸\ ,trail:·
