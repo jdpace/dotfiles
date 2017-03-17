@@ -12,3 +12,14 @@ atom.commands.add 'atom-workspace', 'dot-atom:toggle-theme', ->
     atom.config.set("core.themes", ["one-dark-ui", "one-dark-syntax"])
   else
     atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"])
+
+# Close all panes.
+#
+# Atom's built-in 'pane:close-other-items' is super handy. But sometimes you
+# just really want a completely clean slate.
+#
+# "Shut down all the [panes] on the detention level! ... Shut them all down.
+# Hurry!"
+atom.commands.add 'atom-workspace', 'dot-atom:close-all-panes', ->
+  atom.workspace.getPanes().forEach (pane) ->
+    pane.destroy()
