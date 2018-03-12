@@ -8,7 +8,11 @@ elif [ -d "/Applications/MacVim.app" ]; then
   export VIM_APP_DIR="/Applications"
 fi
 
-if [ ! -z "$VIM_APP_DIR" ] && [ -d $VIM_APP_DIR ]; then
+if [[ $(command -v nvim) ]]; then
+  alias v='nvim'
+  alias vim='nvim'
+  export EDITOR='nvim'
+elif [ ! -z "$VIM_APP_DIR" ] && [ -d $VIM_APP_DIR ]; then
   alias v='mvim'
   alias vim='mvim -v'
   export EDITOR="mvim -vf"
