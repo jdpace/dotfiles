@@ -31,7 +31,7 @@ module Dotfiles
 end
 
 desc "Installs dotfiles and dependencies"
-task :install => ['symlink', 'update']
+task :install => ['symlink', 'update', 'brew']
 
 desc 'Link files and directories in dotfiles/home to $HOME/'
 task :symlink do
@@ -42,4 +42,9 @@ desc 'Update any submodules'
 task :update do
   root = File.expand_path('..', __FILE__)
   system "cd #{root} && git submodule update"
+end
+
+desc 'Install global brew bundle'
+task :brew do
+  system "brew bundle --global"
 end
