@@ -1,3 +1,5 @@
+tap 'decors/powerline-shell'
+
 brew 'bash-completion'
 brew 'fzf'
 brew 'heroku-toolbelt'
@@ -5,6 +7,7 @@ brew 'imagemagick'
 brew 'jq'
 brew 'neovim'
 brew 'openssl'
+brew 'powerline-shell', args: ['HEAD']
 brew 'rbenv'
 brew 'reattach-to-user-namespace'
 brew 'ripgrep'
