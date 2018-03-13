@@ -1,4 +1,4 @@
-" Key Bindinga:
+" Key Bindings:
 "
 " leader key: Reset from \ to ,
 let mapleader = ","
