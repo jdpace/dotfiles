@@ -1,5 +1,4 @@
 [color]
-remote = green
 ui = true
 untracked = cyan
 current = yellow reverse
@@ -45,3 +44,8 @@ default = tracking
 
 [credential]
 helper = osxkeychain
+[protocol]
+version = 2
+
+[fetch]
+	prune = true
