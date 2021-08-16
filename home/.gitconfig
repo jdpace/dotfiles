@@ -1,51 +1,67 @@
 [color]
-ui = true
-untracked = cyan
-current = yellow reverse
-diff = auto
-local = yellow
-branch = auto
-meta = yellow bold
-changed = green
-new = green bold
-added = yellow
-frag = magenta bold
-status = auto
-old = red bold
+	ui = true
+	untracked = cyan
+	current = yellow reverse
+	diff = auto
+	local = yellow
+	branch = auto
+	meta = yellow bold
+	changed = green
+	new = green bold
+	added = yellow
+	frag = magenta bold
+	status = auto
+	old = red bold
 
 [hub]
-protocol = https
+	protocol = https
 
 [core]
-autocrlf = input
-excludesfile = ~/.gitignore
+	autocrlf = input
+	excludesfile = ~/.gitignore
 
 [user]
-name = Jared Pace
-email = jared@codeword.io
+	name = Jared Pace
+	email = jdpace@github.com
 
 [alias]
-dc = diff --cached
-co = checkout
-staged = diff --cached
-cp = cherry-pick
-ci = commit
-di = diff
-st = status
+	dc = diff --cached
+	co = checkout
+	staged = diff --cached
+	cp = cherry-pick
+	ci = commit
+	di = diff
+	st = status
 
 [github]
 	user = jdpace
 
 [branch]
-autosetuprebase = remote
+	autosetuprebase = remote
 
 [push]
-default = tracking
+	default = tracking
 
 [credential]
-helper = osxkeychain
+	helper = osxkeychain
+
 [protocol]
-version = 2
+	version = 2
 
 [fetch]
 	prune = true
+
+[pager]
+	branch = false
+
+[pack]
+	windowMemory = 512m
+	deltaCacheSize = 512m
+	threads = 1
+	packSizeLimit = 20G
+	usebitmaps = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
