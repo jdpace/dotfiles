@@ -20,11 +20,14 @@ fi
 
 mkdir -p $HOME/.config
 ln -sf ../nvim $HOME/.config/nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 vim +PlugInstall +qall
 
 
 ### ZSH
 ln -sf $(pwd)/zsh/*.zsh $HOME/.oh-my-zsh/custom
-if [[ $(command -v zsh) ]]; then
-  chsh -s $(which zsh)
+if ! grep -q "root.*/bin/zsh" /etc/passwd
+then
+  chsh -s /bin/zsh root
 fi
