@@ -13,10 +13,12 @@ ln -sf $(pwd)/home/.* $HOME/
 ### Neovim
 if [[ ! -z "$CODESPACES" ]]; then
   # Install Neovim
-  apt-get install -y fzf libfuse2
+  apt-get install -y fzf libfuse2 ruby-dev
   mkdir -p $HOME/bin
   curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
   chmod a+x $HOME/bin/nvim
+  gem install neovim
+  pip3 install --user pynvim
 fi
 
 mkdir -p $HOME/.config
