@@ -1,2 +1,30 @@
 #!/bin/bash
-rake install
+
+### Housekeeping
+exec > >(tee -i $HOME/dotfiles_install.log)
+exec 2>&1
+set -x
+
+
+### Symlink dotfiles
+ln -sf $(pwd)/home/.* $HOME/
+
+
+### Neovim
+if [[ ! -z "$CODESPACES" ]]; then
+  # Install Neovim
+  apt-get install -y fzf libfuse2
+  curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
+  chmod a+x $HOME/bin/nvim
+fi
+
+mkdir -p $HOME/.config
+ln -sf ../nvim $HOME/.config/nvim
+vim +PlugInstall +qall
+
+
+### ZSH
+ln -sf $(pwd)/zsh/*.zsh $HOME/.oh-my-zsh/custom
+if [[ $(command -v zsh) ]]; then
+  chsh -s $(which zsh)
+fi
