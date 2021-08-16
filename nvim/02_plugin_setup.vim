@@ -38,7 +38,8 @@ Plug 'itchyny/lightline.vim'
 
 " AutoCompletion:
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Readline Style Line Navigation:
 Plug 'tpope/vim-rsi'
