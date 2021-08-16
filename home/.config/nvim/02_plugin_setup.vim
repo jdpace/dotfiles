@@ -34,7 +34,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'itchyny/lightline.vim'
 
 " Finding:
-" Plug 'jremmen/vim-ripgrep'
+"Plug 'jremmen/vim-ripgrep'
 
 " AutoCompletion:
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -48,5 +48,8 @@ Plug 'tpope/vim-commentary'
 
 " Fix Autoread:
 Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" directory browser
+Plug 'preservim/nerdtree'
 
 call plug#end()

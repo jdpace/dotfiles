@@ -19,7 +19,7 @@ map <leader>f :Rg<Space>
 
 " Close buffers
 nmap <leader>q :Bclose<CR>
-nmap <leader>b :bd<CR>
+map <leader>b :bd<CR>
 
 " Run GitHub tests
 nnoremap <leader>gr :Dispatch testrb %<CR>
@@ -34,3 +34,9 @@ nnoremap <silent> <leader>O :Tags<CR>
 nnoremap <silent> <leader>? :History<CR>
 nnoremap <silent> <leader>gb :BCommits<CR>
 nnoremap <silent> <leader>ft :Filetypes<CR>
+
+" <leader>W - remove trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" <leader>> - switch ruby 1.8 hashes to 1.9
+nnoremap <leader>> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>

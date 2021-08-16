@@ -9,6 +9,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" More natural split direction
+set splitbelow
+set splitright
+
 " Line numbers by default.
 set number                              " Enable line numbers
 set numberwidth=3                       " Set line number column width
