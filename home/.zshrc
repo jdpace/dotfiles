@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -79,8 +76,12 @@ plugins=(
   tmux
 )
 
-export PATH="/usr/local/sbin:$PATH"
-eval "$(rbenv init -)"
+export PATH="$HOME/bin:/usr/local/sbin:$PATH"
+
+
+if [[ $(command -v rbenv) ]]; then
+  eval "$(rbenv init -)"
+fi
 
 source $ZSH/oh-my-zsh.sh
 
