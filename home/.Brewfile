@@ -1,6 +1,7 @@
 tap 'decors/powerline-shell'
 
 brew 'bash-completion'
+brew 'bat'
 brew 'fzf'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
