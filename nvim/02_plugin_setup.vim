@@ -49,6 +49,9 @@ Plug 'tpope/vim-commentary'
 " Fix Autoread:
 Plug 'tmux-plugins/vim-tmux-focus-events'
 
+" Change Surround:
+Plug 'tpope/vim-surround'
+
 " directory browser
 Plug 'preservim/nerdtree'
 
