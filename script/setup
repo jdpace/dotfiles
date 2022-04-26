@@ -13,11 +13,11 @@ ln -sf $(pwd)/home/.* $HOME/
 ### Neovim
 if [[ ! -z "$CODESPACES" ]]; then
   # Install Neovim
-  apt-get install -y fzf libfuse2 ruby-dev
+  sudo apt-get install -y fzf libfuse2 ruby-dev
   mkdir -p $HOME/bin
   curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
   chmod a+x $HOME/bin/nvim
-  gem install neovim
+  sudo gem install neovim
   pip3 install --user pynvim
 
   curl -L https://github.com/sharkdp/bat/releases/download/v0.18.2/bat-v0.18.2-x86_64-unknown-linux-gnu.tar.gz | tar -xz -C $HOME
@@ -38,8 +38,8 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-  if ! grep -q "root.*/bin/zsh" /etc/passwd
+  if ! grep -q "vscode.*/bin/zsh" /etc/passwd
   then
-    chsh -s /bin/zsh root
+    chsh -s /bin/zsh vscode
   fi
 fi
