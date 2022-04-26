@@ -40,6 +40,6 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   if ! grep -q "vscode.*/bin/zsh" /etc/passwd
   then
-    chsh -s /bin/zsh vscode
+    sudo chsh -s /bin/zsh vscode
   fi
 fi
