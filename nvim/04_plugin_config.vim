@@ -42,7 +42,7 @@ let g:lightline = {
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
+      \   'gitbranch': 'FugitiveHead',
       \   'fileformat': 'LightlineFileformat',
       \   'filetype': 'LightlineFiletype'
       \ },
