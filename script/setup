@@ -15,7 +15,7 @@ if [[ ! -z "$CODESPACES" ]]; then
   # Install Neovim
   sudo apt-get install -y fzf fuse libfuse2 ruby-dev
   mkdir -p $HOME/bin
-  curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
+  curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.9.0/nvim.appimage
   chmod a+x $HOME/bin/nvim
   sudo gem install neovim
   pip3 install --user pynvim
