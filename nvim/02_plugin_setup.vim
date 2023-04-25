@@ -52,7 +52,10 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 " Change Surround:
 Plug 'tpope/vim-surround'
 
-" directory browser
+" Directory browser:
 Plug 'preservim/nerdtree'
+
+" Language Server:
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
