@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # powerlevel9k config
 #DEFAULT_USER=jared
@@ -57,8 +57,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
+
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
@@ -76,17 +75,9 @@ plugins=(
   tmux
 )
 
-export PATH="$HOME/bin:/usr/local/sbin:$PATH"
-
-
-if [[ $(command -v rbenv) ]]; then
-  eval "$(rbenv init -)"
-fi
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 if [[ $(command -v nvim) ]]; then
   export VISUAL='nvim'
   export EDITOR='nvim'
@@ -95,15 +86,13 @@ else
   export EDITOR='vim'
 fi
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-if [[ -f ~/.p10k.zsh ]]; then
-  source ~/.p10k.zsh
-fi
-
-# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-# --color=dark
-# --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
-# --color=info:#98c379,prompt:#61afef,pointer:#be5046,marker:#e5c07b,spinner:#61afef,header:#61afef,border:#4b5263
-# '
-
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+--color=dark
+--color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
+--color=info:#98c379,prompt:#61afef,pointer:#be5046,marker:#e5c07b,spinner:#61afef,header:#61afef,border:#4b5263
+'
 export BAT_THEME=TwoDark
+
+# Aliases
+alias vim=nvim
+alias gs='git status'
